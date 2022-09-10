@@ -19,8 +19,8 @@ int main(void)
 			{
 				for (l = 0; l <= 9; ++l)
 				{
-					if (i == 0 and k ==0)
-						continue
+					if (i == 0 && k ==0)
+						continue;
 					putchar((i % 10) + '0');
 					putchar((j % 10) + '0');
 					putchar(' ');
