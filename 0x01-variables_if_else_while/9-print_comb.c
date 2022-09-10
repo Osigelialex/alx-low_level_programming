@@ -10,6 +10,10 @@ int main(void)
 
 	for (number = 0; number <= 9; number++)
 	{
+		if (number == 9)
+		{
+			continue;
+		}
 		putchar((number % 10) + '0');
 		putchar(',');
 		putchar(' ');
