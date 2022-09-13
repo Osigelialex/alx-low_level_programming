@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- * _islower -  function that checks for lowercase character
+ * _isalpha -  function that checks for alphabetic character
+ * @c : parameter used to check character
  * Return: 0
  */
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (c >= 97)
-	{
-		return (1);
-	else
-	{
-		return (0);
-	}
+	return (c >= 65 && c <= 122);
 }
