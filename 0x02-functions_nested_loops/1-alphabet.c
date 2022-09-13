@@ -3,7 +3,7 @@
 /**
  * main - function that prints the alphabet, in lowercase
  * Return: Always 0 (Success)
- * print_alphabet: prints 10 times the alphabet, in lowercase
+ * print_alphabet - prints 10 times the alphabet, in lowercase
  */
 void print_alphabet(void)
 {
