@@ -19,7 +19,7 @@ void jack_bauer(void)
 					_putchar((i) + '0');
 					_putchar((j) + '0');
 					_putchar(':');
-					if (l == 9 && i == 2)
+					if (l == 9 && k == 3 && i == 2)
 						continue;
 					_putchar((k) + '0');
 					_putchar((l) + '0');
