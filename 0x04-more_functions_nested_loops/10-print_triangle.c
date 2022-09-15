@@ -9,8 +9,9 @@
 void print_triangle(int size)
 {
 
-	int i = 1, ii;
+	int i, ii;
 
+	i = 1;
 	while (i <= size && size > 0)
 	{
 		ii = 0;
