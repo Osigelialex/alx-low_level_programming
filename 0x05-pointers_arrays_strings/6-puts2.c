@@ -7,9 +7,15 @@
  */
 void puts2(char *str)
 {
-	int i;
+	int x, i;
+	int count;
 
-	for (i = 0; str[i] != '\0'; i += 2)
+	count = 0;
+	for (x = 0; str[x] != '\0'; ++x)
+	{
+		count++;
+	}
+	for (i = 0; i < count; i += 2)
 	{
 		if (i % 2 == 0)
 		{
