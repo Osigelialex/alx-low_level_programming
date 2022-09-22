@@ -4,6 +4,7 @@
  * _strncat - concatenates n characters
  * @dest: destination
  * @src: source
+ * @n: n characters
  * Return: pointer
  */
 char *_strncat(char *dest, char *src, int n)
@@ -24,4 +25,4 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	dest[len + j] = '\0';
 	return (dest);
-} 
+}
