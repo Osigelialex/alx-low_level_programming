@@ -3,7 +3,7 @@
 /**
  * _strncat - concatenates n characters
  * @dest: destination
- * @src: sourcee
+ * @src: source
  * Return: pointer
  */
 char *_strncat(char *dest, char *src, int n)
@@ -12,17 +12,15 @@ char *_strncat(char *dest, char *src, int n)
 	int len;
 
 	len = 0;
+	j = 0;
 	for (i = 0; dest[i] != '\0'; ++i)
 	{
 		len++;
 	}
-	for (j = 0; j < n; ++j)
+	while (j < n && src[j] != '\0')
 	{
-		if (src[j] == '\0')
-		{
-			break;
-		}
 		dest[len + j] = src[j];
+		j++;
 	}
 	dest[len + j] = '\0';
 	return (dest);
