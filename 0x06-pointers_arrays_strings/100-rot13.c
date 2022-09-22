@@ -2,7 +2,7 @@
 
 /**
  * rot13 - encoding style
- * @str: pointer
+ * @s: pointer
  * Return: encoded text
  */
 char *rot13(char *s)
