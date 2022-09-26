@@ -1,40 +1,21 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * print_diagsums - prints sum of diagonal
- * @a: array
- * @size: size
- * Return: void
+ * print_diagsums - description
+ * @a: 2d array of int types
+ * @size: size of array (square)
  */
+
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int leftsum;
-	int rightsum;
+	int i, sum1 = 0, sum2 = 0;
 
-	leftsum = 0;
-	rightsum = 0;
 	for (i = 0; i < size; i++)
 	{
-		for (j = 0; j < size; j++)
-		{
-			if (j == i)
-			{
-				leftsum += a[i][j];
-			}
-		}
+		sum1 += a[i];
+		sum2 += a[size - i - 1];
+		a += size;
 	}
-	for (i = 0; i < size; i++)
-	{
-		for (j = size - 1; j >= 0; j--)
-		{
-			if (j == i + (size - 1))
-			{
-				rightsum += a[i][j];
-			}
-		}
-	}
-	printf("%d,", leftsum);
-	printf("%d\n", rightsum);
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);
 }
