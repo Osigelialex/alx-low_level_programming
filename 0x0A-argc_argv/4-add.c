@@ -3,26 +3,37 @@
 #include <ctype.h>
 
 /**
- * main - adds two numbers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0
+ * main - sum of  the args
+ * @argc: Argument count
+ * @argv: Array of argument strings
+ *
+ * Return: 0 for successful exit
  */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	if (argc <= 1)
+
+	int i = 0;
+	int sum = 0;
+
+	if (argc == 1)
 	{
-		printf(0);
-		putchar('\n');
-	}
-	else if (isdigit(argv[1]) == 0 || isdigit(argv[2] == 0))
-	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
 	}
 	else
 	{
-		printf("%i\n", atoi(argv[1]) + atoi(argv[2]);
-		return (0);
+		for (i = 1; i < argc; i++)
+		{
+			if (!isdigit(*argv[i]))
+			{
+				printf("Error\n");
+			}
+			else
+			{
+				sum += atoi(argv[i]);
+			}
+		}
+		printf("%d\n", sum);
 	}
+
+	return (0);
 }
