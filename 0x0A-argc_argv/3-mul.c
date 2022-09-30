@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - main function
@@ -8,12 +9,11 @@
  */
 int main(int argc, char const *argv[])
 {
-	int mul;
+	(void)argc;
 
-	if (argc != 2)
+	if (argc != 3)
 		printf("Error\n");
 		return (1);
-	mul = argv[1] * argv[2];
-	printf("%d\n", mul);
+	printf("%i\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
