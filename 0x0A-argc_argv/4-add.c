@@ -11,7 +11,6 @@
  */
 int main(int argc, char *argv[])
 {
-
 	int i = 0;
 	int sum = 0;
 
@@ -34,6 +33,5 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", sum);
 	}
-
 	return (0);
 }
