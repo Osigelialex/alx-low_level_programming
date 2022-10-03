@@ -14,6 +14,6 @@ char *_strdup(char *str)
 	if (str == NULL || s == NULL)
 		return ('\0');
 	s = str;
-	free(str);
+	free(s);
 	return (s);
 }
