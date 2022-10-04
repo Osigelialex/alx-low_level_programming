@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * str - string
+ * _strlen - returns length of string
+ * @str: string
  * Return: length
  */
 int _strlen(char *str)
@@ -23,7 +24,7 @@ int _strlen(char *str)
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int i, j;
+	int i, n1, n2;
 
 	if (s1 == NULL)
 		s1 = "\0";
@@ -36,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < n1 - 1)
 			s[i] = s1[i];
-		else {
+		else
 			s[i] = s2[i - n1];
 	}
 	return (s);
