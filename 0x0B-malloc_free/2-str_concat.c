@@ -33,6 +33,9 @@ char *str_concat(char *s1, char *s2)
 	n1 = _strlen(s1) + 1;
 	n2 = _strlen(s2) + 1;
 	s = malloc(n1 + n2);
+	if (s == 0)
+		return (0);
+
 	for (i = 0; i < (n1 + n2) - 2; ++i)
 	{
 		if (i < n1 - 1)
@@ -40,5 +43,6 @@ char *str_concat(char *s1, char *s2)
 		else
 			s[i] = s2[i - n1];
 	}
+	s[i] = '\0';
 	return (s);
 }
