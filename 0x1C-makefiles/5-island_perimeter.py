@@ -25,6 +25,6 @@ def island_perimeter(grid):
                 if grid[i - 1][j] == 1:
                     count += 1
                 # calculate perimeter of cell
-                perimeter = 4 - count
+                perimeter += 4 - count
                 count = 0
     return perimeter
